@@ -11,17 +11,14 @@ color:#333;
 }
 
 .banner{
-display:flex;
-width: 100%;
-height: auto;
-object-fit: cover;
--webkit-user-select: none;
--moz-user-select: none;
-user-select: none
+background:#111;
+color:white;
+padding:40px;
+text-align:center;
 }
 
 .banner h1{
-font-size:42px;
+font-size:40px;
 }
 
 .container{
@@ -33,23 +30,9 @@ padding:25px;
 .intro{
 background:white;
 padding:20px;
-border-radius:10px;
 margin-bottom:20px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
-}
-
-.time-card{
-background:#ff163a;
-color:white;
-padding:20px;
 border-radius:10px;
-text-align:center;
-margin-bottom:20px;
-}
-
-#clock{
-font-size:26px;
-margin-top:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 table{
@@ -58,28 +41,21 @@ border-collapse:collapse;
 background:white;
 border-radius:10px;
 overflow:hidden;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 th{
-background:#000000;
+background:#0057b8;
 color:white;
-padding:14px;
+padding:12px;
 }
 
 td{
-padding:14px;
+padding:12px;
 text-align:center;
 border-bottom:1px solid #eee;
 }
 
-tr:hover td{
+tr:hover{
 background:#f1f7ff;
-}
-
-footer{
-text-align:center;
-padding:20px;
-color:#777;
-margin-top:30px;
 }
