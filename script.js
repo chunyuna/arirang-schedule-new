@@ -1,3 +1,4 @@
+// 🕒 live clock
 function updateClock() {
 
 const now = new Date();
@@ -22,31 +23,14 @@ setInterval(updateClock, 1000);
 updateClock();
 
 
-// 🌍 Multi-timezone converter
-function showTimes(dateStr, ids) {
+// 🌍 convert event time → USER LOCAL TIME
+function showLocal(eventTime, id) {
 
-const date = new Date(dateStr);
+const date = new Date(eventTime);
 
-function format(tz){
-return date.toLocaleString("en-US", {
-hour:"2-digit",
-minute:"2-digit",
-hour12:true,
-timeZone: tz
-});
-}
-
-document.getElementById(ids.kl).innerHTML =
-format("Asia/Kuala_Lumpur");
-
-document.getElementById(ids.tokyo).innerHTML =
-format("Asia/Tokyo");
-
-document.getElementById(ids.london).innerHTML =
-format("Europe/London");
-
-document.getElementById(ids.local).innerHTML =
+document.getElementById(id).innerHTML =
 date.toLocaleString(undefined, {
+weekday:"short",
 hour:"2-digit",
 minute:"2-digit",
 hour12:true
@@ -55,24 +39,7 @@ hour12:true
 }
 
 
-// Events
-showTimes("2026-08-02T19:00:00", {
-kl:"kl1",
-tokyo:"tokyo1",
-london:"london1",
-local:"local1"
-});
-
-showTimes("2026-08-09T19:30:00", {
-kl:"kl2",
-tokyo:"tokyo2",
-london:"london2",
-local:"local2"
-});
-
-showTimes("2026-08-16T19:00:00", {
-kl:"kl3",
-tokyo:"tokyo3",
-london:"london3",
-local:"local3"
-});
+// 🎤 EVENTS (venue time → auto local conversion)
+showLocal("2026-08-02T19:00:00", "t1");
+showLocal("2026-08-09T19:30:00", "t2");
+showLocal("2026-08-16T19:00:00", "t3");
