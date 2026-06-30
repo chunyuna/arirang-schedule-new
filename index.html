@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>World Concert Tour</title>
+<title>Concert Schedule</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,67 +12,63 @@
 <body>
 
 <header class="banner">
-    <div>
-        <img alt="BTS WORLD TOUR ARIRANG'" class="banner" draggable="false" src="images/banner-tour.jpg">
-       <!-- <h1> World Concert Tour</h1>
-        <p>Official Schedule • Local Time Auto Conversion</p>-->
-    </div>
+  <div>
+    <h1>🎤 World Concert Tour</h1>
+    <p>All event times automatically adjust to your local time</p>
+  </div>
 </header>
 
 <div class="container">
 
 <section class="intro">
-    <h2>About the Tour</h2>
-    <p>
-        This page shows official concert times (venue time) and automatically converts them into multiple time zones including your local time.
-    </p>
+  <h2>About</h2>
+  <p>
+    This concert schedule shows official venue times and automatically converts them to your local time zone.
+  </p>
 </section>
 
 <section class="time-card">
-    <h2>Your Local Time</h2>
-    <div id="clock"></div>
-    <div id="timezone"></div>
+  <h2>Your Local Time</h2>
+  <div id="clock"></div>
+  <div id="timezone"></div>
 </section>
 
 <table>
 
 <thead>
 <tr>
-    <th>Event Time</th>
-    <th>Malaysia</th>
-    <th>Tokyo</th>
-    <th>London</th>
-    <th>Your Local</th>
+  <th>Date</th>
+  <th>City</th>
+  <th>Venue</th>
+  <th>Event Time (Venue)</th>
+  <th>Your Local Time</th>
 </tr>
 </thead>
 
 <tbody>
 
 <tr>
-    <td>2 Aug 2026 - 7:00 PM</td>
-
-    <td id="kl1"></td>
-    <td id="tokyo1"></td>
-    <td id="london1"></td>
-    <td id="local1"></td>
+  <td>2 Aug 2026</td>
+  <td>Kuala Lumpur</td>
+  <td>Bukit Jalil Stadium</td>
+  <td>7:00 PM</td>
+  <td id="t1"></td>
 </tr>
 
 <tr>
-    <td>9 Aug 2026 - 7:30 PM</td>
-
-    <td id="kl2"></td>
-    <td id="tokyo2"></td>
-    <td id="london2"></td>
-    <td id="local2"></td>
+  <td>9 Aug 2026</td>
+  <td>Singapore</td>
+  <td>National Stadium</td>
+  <td>7:30 PM</td>
+  <td id="t2"></td>
 </tr>
 
 <tr>
-    <td>16 Aug 2026 - 7:00 PM</td>
-
-    <td id="kl3"></td>
-    <td id="tokyo3"></td>
-    <td id="london3"></td>
-    <td id="local3"></td>
+  <td>16 Aug 2026</td>
+  <td>Bangkok</td>
+  <td>Rajamangala Stadium</td>
+  <td>7:00 PM</td>
+  <td id="t3"></td>
 </tr>
 
 </tbody>
@@ -82,7 +78,7 @@
 </div>
 
 <footer>
-© 2026 World Concert Tour
+© 2026 Concert Tour
 </footer>
 
 <script src="script.js"></script>
