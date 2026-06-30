@@ -10,16 +10,15 @@ background:#f4f6fb;
 color:#333;
 }
 
+/* Banner */
 .banner{
-height:280px;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
 display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
+width: 100%;
+height: auto;
+object-fit: cover;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none
 }
 
 .banner h1{
@@ -41,7 +40,7 @@ box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
 .time-card{
-background:#0057b8;
+background:#ff163a;
 color:white;
 padding:20px;
 border-radius:12px;
@@ -64,7 +63,7 @@ box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
 th{
-background:#0057b8;
+background:#000000;
 color:white;
 padding:15px;
 }
