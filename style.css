@@ -10,46 +10,47 @@ background:#f4f6fb;
 color:#333;
 }
 
-/* Banner */
 .banner{
+height:250px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
 display:flex;
-width: 100%;
-height: auto;
-object-fit: cover;
--webkit-user-select: none;
--moz-user-select: none;
-user-select: none
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
 }
 
 .banner h1{
-font-size:48px;
+font-size:42px;
 }
 
 .container{
-max-width:1100px;
+max-width:1000px;
 margin:auto;
-padding:30px;
+padding:25px;
 }
 
 .intro{
 background:white;
 padding:20px;
-border-radius:12px;
+border-radius:10px;
 margin-bottom:20px;
-box-shadow:0 4px 10px rgba(0,0,0,.1);
+box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
 
 .time-card{
-background:#ff163a;
+background:#0057b8;
 color:white;
 padding:20px;
-border-radius:12px;
+border-radius:10px;
 text-align:center;
 margin-bottom:20px;
 }
 
 #clock{
-font-size:28px;
+font-size:26px;
 margin-top:10px;
 }
 
@@ -57,19 +58,19 @@ table{
 width:100%;
 border-collapse:collapse;
 background:white;
-border-radius:12px;
+border-radius:10px;
 overflow:hidden;
-box-shadow:0 4px 10px rgba(0,0,0,.1);
+box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
 
 th{
-background:#000000;
+background:#0057b8;
 color:white;
-padding:15px;
+padding:14px;
 }
 
 td{
-padding:15px;
+padding:14px;
 text-align:center;
 border-bottom:1px solid #eee;
 }
@@ -81,6 +82,6 @@ background:#f1f7ff;
 footer{
 text-align:center;
 padding:20px;
-color:#666;
+color:#777;
 margin-top:30px;
 }
