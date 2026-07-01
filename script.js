@@ -18,3 +18,4 @@ function showLocalTime(eventTime, elementId) {
 showLocalTime("2026-08-02T19:00:00+08:00", "t1");
 showLocalTime("2026-08-09T19:30:00+08:00", "t2");
 showLocalTime("2026-08-16T19:00:00+07:00", "t3");
+showLocalTime("2026-07-18T19:00:00+02:00", "t4");
